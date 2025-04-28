@@ -16,7 +16,7 @@ const Job = ({
   createdAt,
   jobStatus,
 }) => {
-  const date = day(createdAt).format('MMM do, YYYY');
+  const date = day(createdAt).format('MMM DD, YYYY');
 
   return (
     <Wrapper>
