@@ -12,7 +12,7 @@ const router = Router();
 const apiLimiter = rateLimit({
   windowMs: 10 * 60 * 1000,
   max: 5,
-  message: { msg: 'IP rate limit exceeded, retry in 15 minutes' },
+  message: { msg: 'IP rate limit exceeded, retry in 10 minutes' },
 });
 
 router.post('/register', apiLimiter, validateRegisterInput, register);
